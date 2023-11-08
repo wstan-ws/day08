@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BBQ RSVP</title>
+        <link rel="stylesheet" href="/form.css">
+    </head>
+    <body>
+
+        <h2>RSVP</h2>
+
+        <form>
+
+            <table>
+
+                <tr>
+                    <td> Name: </td>
+                    <td>
+                        <input type="text" name="name" placeholder="Please enter your name" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Email: </td>
+                    <td>
+                        <input type="email" name="email" placeholder="Please enter your email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pax: </td>
+                    <td>
+                        <select name="pax">
+                            <!-- value is meant for the computer to read -->
+                            <option value="1">One</option>
+                            <!-- use 'selected' to specify which value to be defaulted -->
+                            <option value="2" selected>Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Diet: </td>
+                    <td> 
+                        Meat <input type="radio" name="diet">
+                        No-Meat <input type="radio" name="diet">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Potluck: </td>
+                    <td>
+                        Chicken <input type="checkbox" name="chicken">
+                        Pork <input type="checkbox" name="pork">
+                        Beef <input type="checkbox" name="beef">
+                        Wine <input type="checkbox" name="wine">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comments: </td>
+                    <td>
+                        <textarea name="input" cols="30" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                    <td><button type="reset">Clear</button></td>
+                </tr>
+
+            </table>
+
+        </form>
+
+        <h3><a href="/index.html">back</a></h3>
+        
+    </body>
+</html>
